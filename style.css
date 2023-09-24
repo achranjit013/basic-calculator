@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  background: darkgray;
+}
+
+.wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  background: lightblue;
+  min-height: 40vh;
+  width: 70vw;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "calc-output calc-output calc-output calc-output"
+    "calc-output calc-output calc-output calc-output"
+    "calc-btn-c calc-btn-del calc-btn-bracket calc-btn-percent"
+    "calc-btn-seven calc-btn-eight calc-btn-nine calc-btn-multiply"
+    "calc-btn-four calc-btn-five calc-btn-six calc-btn-divide"
+    "calc-btn-one calc-btn-two calc-btn-three calc-btn-plus"
+    "calc-btn-plus-minus calc-btn-zero calc-btn-decimal calc-btn-minus"
+    "calc-btn-advance calc-btn-history calc-btn-equal calc-btn-equal";
+}
+
+.calc-btn-c {
+  grid-area: calc-btn-c;
+}
+.calc-btn-del {
+  grid-area: calc-btn-del;
+}
+.calc-btn-bracket {
+  grid-area: calc-btn-bracket;
+}
+.calc-btn-percent {
+  grid-area: calc-btn-percent;
+}
+.calc-btn-divide {
+  grid-area: calc-btn-divide;
+}
+.calc-btn-seven {
+  grid-area: calc-btn-seven;
+}
+.calc-btn-eight {
+  grid-area: calc-btn-eight;
+}
+.calc-btn-nine {
+  grid-area: calc-btn-nine;
+}
+.calc-btn-multiply {
+  grid-area: calc-btn-multiply;
+}
+.calc-btn-four {
+  grid-area: calc-btn-four;
+}
+.calc-btn-five {
+  grid-area: calc-btn-five;
+}
+.calc-btn-six {
+  grid-area: calc-btn-six;
+}
+.calc-btn-minus {
+  grid-area: calc-btn-minus;
+}
+.calc-btn-one {
+  grid-area: calc-btn-one;
+}
+.calc-btn-two {
+  grid-area: calc-btn-two;
+}
+.calc-btn-three {
+  grid-area: calc-btn-three;
+}
+.calc-btn-plus {
+  grid-area: calc-btn-plus;
+}
+.calc-btn-plus-minus {
+  grid-area: calc-btn-plus-minus;
+}
+.calc-btn-zero {
+  grid-area: calc-btn-zero;
+}
+.calc-btn-decimal {
+  grid-area: calc-btn-decimal;
+}
+.calc-btn-equal {
+  grid-area: calc-btn-equal;
+}
+
+.calc-output {
+  grid-area: calc-output;
+}
+
+.calc-header {
+  background: white;
+  height: 3.5rem;
+  text-align: right;
+}
+
+.calc-header-result {
+  background: white;
+  height: 5rem;
+  text-align: right;
+  font-size: 3rem;
+}
+
+.calc-btn {
+  background: white;
+  height: 2rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-btn-decimal,
+.calc-btn-bracket {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
